@@ -16,9 +16,9 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Developing this add-on
+# Developing the extension
 
-## Get started
+## First time setup
 
 ```
 yarn install
@@ -36,6 +36,15 @@ npx sentry-cli info
 cp .env.production .env
 npx sentry-cli info
 ```
+
+Build Bergamot Translator for WASM:
+
+```bash
+source /path/to/emsdk_env.sh
+./build-and-import-bergamot-translator.sh
+```
+
+Repeat this last step any time there has been an update in the bergamot-translator submodule.
 
 ## Creating build artifacts
 
